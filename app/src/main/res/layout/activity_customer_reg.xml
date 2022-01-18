@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_green"
+    tools:context=".activities.CustomerRegActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_logo"
+        android:layout_centerHorizontal="true"
+        android:text="Customer Registration"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_creg_name"
+        app:layout_constraintTop_toBottomOf="@+id/app_logo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="86dp"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:text="Name"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/txt_creg_name"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="49dp" />
+
+    <EditText
+        android:id="@+id/txt_creg_password"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input_design"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="547dp"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Email"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/txt_creg_email"
+        app:layout_constraintTop_toBottomOf="@+id/txt_creg_name"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        android:layout_below="@+id/txt_creg_name"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/txt_creg_name"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input_design"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="218dp" />
+
+    <Button
+        android:id="@+id/btn_creg_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_creg_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/buttons"
+        android:text="Register"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/yellow_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_creg_password"
+        app:layout_constraintVertical_bias="0.355" />
+
+    <EditText
+        android:id="@+id/txt_creg_email"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input_design"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="327dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Mobile Phone"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/txt_creg_mobile"
+        app:layout_constraintTop_toBottomOf="@+id/txt_creg_email"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="50dp"
+        android:layout_below="@+id/txt_creg_email"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/txt_creg_password"
+        app:layout_constraintTop_toBottomOf="@+id/txt_creg_mobile"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        android:layout_below="@+id/txt_creg_mobile"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/txt_creg_mobile"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/input_design"
+        android:ems="10"
+        android:inputType="phone"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/txt_creg_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_creg_email"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="206dp"
+        android:layout_height="98dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+</RelativeLayout>
